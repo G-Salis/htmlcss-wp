@@ -54,17 +54,51 @@ a{
   color: #9F9F9F;
 }
 
-a:hover, a:active{
+a:visited{
+  color: black;
+}
+
+a:hover{
   color: orangered;
 }
 
-.giam{
+
+
+.jumbo{
   min-height: 500px;
   background-color: coral;
   background-image: url(../img/banner.jpg);
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
+
+.opacity_jumbo{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  min-height: 500px;
+  border-radius: 5px;
+}
+
+.opacity_jumbo span{
+  display: inline-block;
+  color: white;
+  width: 50%;
+  min-height: 500px;
+  padding-left: 20px;
+  padding-top: 25%;
+  text-align: justify;
+}
+
+.jumbo_title{
+  color: white;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+
+
+
 
 /* MAIN */
 main{
