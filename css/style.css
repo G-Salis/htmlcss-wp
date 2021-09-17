@@ -1,3 +1,4 @@
+/* REGOLE GENERALI */
 *{
   margin: 0;
   padding: 0;
@@ -11,9 +12,21 @@
 }
 
 .container{
+  font-family: 'Montserrat', sans-serif;
   width: 60%;
   margin: auto;
 }
+
+.jumbo, div.left_cont, div.content, div.right_cont{
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+p{
+  color: #B6B6B6
+}
+
 
 /* HEADER */
 header{
@@ -29,12 +42,7 @@ header{
   border-right: 3px solid #F1F1F1;
 }
 
-
-
-.content_title, footer{
-  background-color: blue;
-}
-
+/* Menu navigazione */
 .menu{
   list-style: none;
   font-size: 25px;
@@ -62,15 +70,11 @@ a:hover{
   color: orangered;
 }
 
-
-
+/* Jumbotron */
 .jumbo{
   min-height: 500px;
-  background-color: coral;
   background-image: url(../img/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
+  margin-bottom: 40px;
 }
 
 .opacity_jumbo{
@@ -86,27 +90,19 @@ a:hover{
   width: 50%;
   min-height: 500px;
   padding-left: 20px;
-  padding-top: 25%;
+  padding-top: 15%;
   text-align: justify;
 }
 
 .jumbo_title{
-  color: white;
   font-size: 35px;
   line-height: 40px;
 }
 
-
-
-
-
 /* MAIN */
-main{
-  background-color: crimson;
-}
-
+/* Titolo */
 .content_title{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Dimensioni e posizionamento dei float all'interno del main */
@@ -124,14 +120,49 @@ aside, section{
   float: left;
   border-radius: 5px;
   margin-bottom: 20px;
-  background-color: green;
-  background-image: url(https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
+/* Immagini nel main */
+div.left_cont{
+  background-image: url(../img/img-1.jpg);
+}
+
+div.content{
+  background-image: url(../img/banner-2.jpg);
+}
+
+div.right_cont{
+  background-image: url(../img/img-3.jpg);
+}
+
+/* Opacità */
+.secondary_op, .primary_op{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  min-height: 300px;
+  border-radius: 5px;
+}
+
+h4{
+  line-height: 50px;
+}
+
+
 /* FOOTER */
+footer{
+  margin-top: 40px;
+}
 footer.container{
   margin-top: 5px;
   min-height: 30px;
+}
+
+.firma{
+text-align: center;
+}
+
+/* Simbolo del Cuore */
+.firma::after{
+  content: "\2764";
+  color: red;
 }
