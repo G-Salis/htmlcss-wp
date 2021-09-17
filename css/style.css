@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container{
+  width: 60%;
+  margin: auto;
+}
+
+/* HEADER */
+header{
+  margin-bottom: 20px;
+}
+
+.logo{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100px;
+  width: 30%;
+  border-right: 3px solid #F1F1F1;
+}
+
+
+
+.content_title, footer{
+  background-color: blue;
+}
+
+.menu{
+  list-style: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  min-height: 50px;
+  margin: 20px 0px;
+}
+
+li{
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #9F9F9F;
+}
+
+a:hover, a:active{
+  color: orangered;
+}
+
+.giam{
+  min-height: 500px;
+  background-color: coral;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN */
+main{
+  background-color: crimson;
+}
+
+.content_title{
+  margin-bottom: 20px;
+}
+
+/* Dimensioni e posizionamento dei float all'interno del main */
+section{
+  width: 58%;
+  margin: 0% 1%;
+}
+
+aside{
+  width: 20%;
+} 
+
+aside, section{
+  min-height: 300px;
+  float: left;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: green;
+  background-image: url(https://www.zooplus.it/magazine/wp-content/uploads/2020/10/1-37-768x512.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* FOOTER */
+footer.container{
+  margin-top: 5px;
+  min-height: 30px;
+}
