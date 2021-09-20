@@ -21,6 +21,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 5px;
+  /* overflow: hidden; */
 }
 
 p{
@@ -85,7 +86,7 @@ a:hover{
   display: inline-block;
   color: white;
   width: 50%;
-  margin: 100px 0px;
+  margin: 20% 0px;
   padding-left: 20px;
   text-align: justify;
 }
